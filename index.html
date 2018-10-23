@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Real State Web App</title>
+	<!-- Firebase CDN -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+	<!-- For Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<!-- For Social Icon -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+	<!-- Main CSS File -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body onload="fetchAll()">
+
+	<header>
+		<h2><a href="#">Website Logo</a></h2>
+		<nav>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</nav>
+	</header>
+
+
+	<section class="hero">
+		<div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
+		<h1>SHEIKH ASSOCIATE</h1>
+		<h3>We provide you the best properties in Defence Housing Authority</h3>
+		<div class="social">
+			<a href="#"><i class="fa fa-facebook icon" aria-hidden="false" style="font-size:30px;margin-right:6px"></i></a>
+			<a href="#"><i class="fa fa-instagram icon" aria-hidden="false" style="font-size:30px;margin-right:6px"></i></a>
+			<a href="#"><i class="fa fa-twitter icon" aria-hidden="false" style="font-size:30px;margin-right:6px"></i></a>
+		</div>
+	</section>
+
+
+
+	<section class="features">
+		<h3 class="title">Features Properties</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae
+			pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+		<ul class="grid" id="main">
+
+		</ul>
+		<button class="btn" onclick="fetchAll()">Show More</button>
+		</div>
+	</section>
+
+
+	<section class="features">
+		<h3 class="title">Our Services</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae
+			pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fa fa-home"></i>
+				<h4>Houses</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae
+					pulvinar velit.</p>
+			</li>
+			<li>
+				<i class="fa fa-building"></i>
+				<h4>Flats</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae
+					pulvinar velit.</p>
+			</li>
+			<li>
+				<i class="fa fa-home"></i>
+				<h4>Bungalows</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae
+					pulvinar velit.</p>
+			</li>
+			</div>
+	</section>
+
+	<section class="contact">
+		<h3 class="title">Join our newsletter</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae
+			pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+		<div class="map-area" data-wow-delay="0.5s">
+			<div id="googleMap"></div>
+		</div>
+		<br>
+		<form>
+			<input type="email" placeholder="Email">
+			<a href="#" class="btn">Subscribe now</a>
+		</form>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<p>Made by <a href="#/" target="_blank">Al-Razzak Tech</a>.</p>
+	</footer>
+
+	<!-- Main Firebase File -->
+	<script src="assets/js/wm_fire.js"></script>
+
+	<!-- Main Javascript File -->
+	<script src="assets/js/wm_main.js"></script>
+	<!-- MAP CDN -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk9KNSL1jTv4MY9Pza6w8DJkpI_nHyCnk"></script>
+	<!-- Google Map -->
+	<script src="assets/js/map-active.js"></script>
+
+
+</body>
+
+</html>
